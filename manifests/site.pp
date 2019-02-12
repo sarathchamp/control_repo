@@ -2,7 +2,7 @@ node default{
  }
 node 'fedora'{
 include role::master_server
-file{ '/root/README':
+file{ '/root/README1':
      ensure=> file,
      content=>$fqdn
 }
