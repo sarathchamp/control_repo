@@ -2,6 +2,7 @@ class profile::agent_nodes{
 include dockeragent:
 dockeragentnode::{'web.puppet.vm'}
 dockeragentnode::{'db.puppet.vm'}
+dockeragentnode::{'minetest.puppet.vm'}
 host {'web.puppet.vm':
     ensure=> present,
     ip=>'172.18.0.2',
